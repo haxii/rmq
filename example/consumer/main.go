@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/haxii/rmq/v5"
 	"log"
 	"os"
 	"os/signal"

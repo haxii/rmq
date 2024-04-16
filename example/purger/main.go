@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/haxii/rmq/v5"
 	"log"
 )
 
