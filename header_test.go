@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/adjust/rmq/v5"
+	"github.com/haxii/rmq/v5"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

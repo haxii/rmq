@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"log"
 	"time"
-
-	"github.com/adjust/rmq/v5"
 )
 
 const (

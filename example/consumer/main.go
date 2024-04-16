@@ -7,8 +7,6 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
-
-	"github.com/adjust/rmq/v5"
 )
 
 const (

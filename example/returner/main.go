@@ -3,8 +3,6 @@ package main
 import (
 	"log"
 	"math"
-
-	"github.com/adjust/rmq/v5"
 )
 
 func main() {

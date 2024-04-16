@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/haxii/rmq/v5"
 	"log"
 	"net/http"
-
-	"github.com/adjust/rmq/v5"
 )
 
 func main() {

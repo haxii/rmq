@@ -1,5 +1,5 @@
-[![Build Status](https://github.com/adjust/rmq/workflows/test/badge.svg)](https://github.com/adjust/rmq/actions?query=branch%3Amaster+workflow%3Atest)
-[![GoDoc](https://pkg.go.dev/badge/github.com/adjust/rmq)](https://pkg.go.dev/github.com/adjust/rmq)
+[![Build Status](https://github.com/haxii/rmq/workflows/test/badge.svg)](https://github.com/haxii/rmq/actions?query=branch%3Amaster+workflow%3Atest)
+[![GoDoc](https://pkg.go.dev/badge/github.com/haxii/rmq)](https://pkg.go.dev/github.com/haxii/rmq)
 
 ## Overview
 
@@ -15,7 +15,7 @@ Let's take a look at how to use rmq.
 Of course you need to import rmq wherever you want to use it.
 
 ```go
-import "github.com/adjust/rmq/v5"
+import "github.com/haxii/rmq/v5"
 ```
 
 ### Connection

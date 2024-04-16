@@ -2,8 +2,6 @@ package main
 
 import (
 	"log"
-
-	"github.com/adjust/rmq/v5"
 )
 
 func main() {
