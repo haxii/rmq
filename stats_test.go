@@ -46,14 +46,14 @@ func TestStats(t *testing.T) {
 
 	queues, err := connection.GetOpenQueues()
 	assert.NoError(t, err)
-	stats, err := CollectStats(queues, connection)
+	stats, err := CollectStats(queues, connection, false)
 	assert.NoError(t, err)
 	// log.Printf("stats\n%s", stats)
 	html := stats.GetHtml("", "")
 	assert.Regexp(t, ".*queue.*ready.*connection.*unacked.*consumers.*q1.*1.*0.*0.*", html)
 	assert.Regexp(t, ".*queue.*ready.*connection.*unacked.*consumers.*q2.*0.*1.*1.*2.*conn2.*1.*2.*", html)
 
-	stats, err = CollectStats([]string{"stats-q1", "stats-q2"}, connection)
+	stats, err = CollectStats([]string{"stats-q1", "stats-q2"}, connection, false)
 	assert.NoError(t, err)
 
 	for key, _ := range stats.QueueStats {

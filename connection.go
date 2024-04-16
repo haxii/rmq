@@ -25,6 +25,7 @@ const (
 type Connection interface {
 	OpenQueue(name string) (Queue, error)
 	CollectStats(queueList []string) (Stats, error)
+	CollectDetailStats(queueList []string) (Stats, error)
 	GetOpenQueues() ([]string, error)
 	StopAllConsuming() <-chan struct{}
 
@@ -205,9 +206,14 @@ func (connection *redisConnection) OpenQueue(name string) (Queue, error) {
 	return queue, nil
 }
 
-// CollectStats collects and returns stats
+// CollectStats collects and returns stats without connections
 func (connection *redisConnection) CollectStats(queueList []string) (Stats, error) {
-	return CollectStats(queueList, connection)
+	return CollectStats(queueList, connection, false)
+}
+
+// CollectDetailStats collects and returns stats
+func (connection *redisConnection) CollectDetailStats(queueList []string) (Stats, error) {
+	return CollectStats(queueList, connection, true)
 }
 
 // GetOpenQueues returns a list of all open queues
